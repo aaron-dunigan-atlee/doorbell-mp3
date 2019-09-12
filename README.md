@@ -1,6 +1,8 @@
 # doorbell-mp3
 Script for Raspberry Pi to play mp3 when relay is closed.
 
+Wiring: each button/relay should be wired to one numbered GPIO pin and then back to a GROUND pin.  (See https://www.raspberrypi.org/documentation/usage/gpio/ for pin layout and https://gpiozero.readthedocs.io/en/stable/recipes.html#button for button wiring.)
+
 To install, open terminal and type:
 
 git clone https://github.com/aaron-dunigan-atlee/doorbell-mp3.git
