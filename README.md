@@ -22,8 +22,10 @@ And then a blank line, and then ctrl+x to exit, y to confirm save, enter to conf
 Explanation:
 `@reboot` 
 (Executes at reboot.)
+
 `python3 /home/pi/doorbell-mp3/doorbell.py` 
 (Runs our script.)
+
 `>>doorbell-log.txt 2>&1` 
 (This part copies all the printed output, including any errors, to a text file so we can check back later if something weird happened. The output is appended, so you can see all the past executions of the script.)
 
