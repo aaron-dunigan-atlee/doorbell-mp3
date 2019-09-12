@@ -19,7 +19,7 @@ REAR_DOOR_PIN = 24
 # Unless an absolute path is specified, these should be placed
 # in the same folder as this script. 
 FRONT_DOOR_SOUND_PATH = "./front1.mp3"
-REAR_DOOR_SOUND_PATH = "./rear1.mp3"
+REAR_DOOR_SOUND_PATH = "./back1.mp3"
 # Initialize the pygame mixer.
 pygame.mixer.init()
 PLAYER = pygame.mixer.music
