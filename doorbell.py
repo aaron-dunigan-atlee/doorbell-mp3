@@ -36,6 +36,9 @@ def play_music(filename):
         print("Couldn't find file " + filename)
 
 # Main code
+# Print statement will go to log file to delineate each execution of the script.
+print()
+print("Starting doorbell script.")
 # Create Button objects for each door
 front_door = Button(FRONT_DOOR_PIN)
 rear_door = Button(REAR_DOOR_PIN)
@@ -49,5 +52,3 @@ rear_door.when_pressed = partial(play_music, REAR_DOOR_SOUND_PATH)
 # are no longer registered.  So now the script waits indefinitely for someone
 # to ring the doorbell.
 pause()
-
-
