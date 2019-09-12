@@ -5,18 +5,18 @@ Wiring: each button/relay should be wired to one numbered GPIO pin and then back
 
 To install, open terminal and type:
 
-git clone https://github.com/aaron-dunigan-atlee/doorbell-mp3.git
+`git clone https://github.com/aaron-dunigan-atlee/doorbell-mp3.git`
 
 The script will download, along with sample mp3's. You can replace these with your own. 
 
 To edit the cron table for automatic running of the script, type in the terminal:
 
-crontab -e
+`crontab -e`
 
 You may get a prompt asking which editor to use.  Choose nano.
 In the nano text editor, add the following line at the bottom:
 
-@reboot python3 /home/pi/doorbell-mp3/doorbell.py >>doorbell-log.txt 2>&1
+`@reboot python3 /home/pi/doorbell-mp3/doorbell.py >>doorbell-log.txt 2>&1`
 
 And then a blank line, and then ctrl+x to exit, y to confirm save, enter to confirm filename, enter to exit.
 Explanation:
