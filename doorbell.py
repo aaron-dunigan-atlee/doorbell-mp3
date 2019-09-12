@@ -14,7 +14,7 @@ from signal import pause
 # Global constants
 # GPIO pin numbers for relay inputs
 FRONT_DOOR_PIN = 2
-REAR_DOOR_PIN = 3
+REAR_DOOR_PIN = 24
 # Paths for corresponding sounds.  
 # Unless an absolute path is specified, these should be placed
 # in the same folder as this script. 
